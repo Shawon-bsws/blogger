@@ -1,0 +1,32 @@
+{
+  "module": "blog_comment_maps",
+  "field_defs": {
+    "blog_comment_map_id": {
+      "name": "blog_comment_map_id",
+      "field": "blog_comment_map_id",
+      "type": "number",
+      "db_fields": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "user_master_id": {
+      "name": "user_master_id",
+      "field": "user_master_id",
+      "type": "number",
+      "db_fields": {
+        "type": "number",
+        "required": false
+      }
+    },
+    "blog_master_id": {
+      "name": "blog_master_id",
+      "field": "blog_master_id",
+      "type": "number",
+      "db_fields": {
+        "type": "number",
+        "required": false
+      }
+    }
+  }
+}

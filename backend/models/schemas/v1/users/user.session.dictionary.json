@@ -1,0 +1,54 @@
+{
+  "module": "users_sessions",
+  "field_defs": {
+    "user_session_id": {
+      "field": "user_session_id",
+      "type": "number",
+      "db_fields": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "user_master_id": {
+      "field": "user_master_id",
+      "type": "number",
+      "db_fields": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "user_token": {
+      "field": "user_token",
+      "type": "token",
+      "db_fields": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "created_at": {
+      "field": "created_at",
+      "type": "datetime",
+      "db_fields": {
+        "type": "datetime",
+        "required": true
+      }
+    },
+    "updated_at": {
+      "field": "updated_at",
+      "type": "datetime",
+      "db_fields": {
+        "type": "datetime",
+        "required": false
+      }
+    },
+    "is_active": {
+      "field": "is_active",
+      "type": "bool",
+      "db_fields": {
+        "type": "delete",
+        "required": true,
+        "default": "Y"
+      }
+    }
+  }
+}

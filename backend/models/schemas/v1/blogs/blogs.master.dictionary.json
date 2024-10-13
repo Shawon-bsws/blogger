@@ -1,0 +1,69 @@
+{
+  "module": "blog_masters",
+  "field_defs": {
+    "blog_master_id": {
+      "name": "blog_master_id",
+      "field": "blog_master_id",
+      "type": "number",
+      "db_fields": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "user_master_id": {
+      "name": "user_master_id",
+      "field": "user_master_id",
+      "type": "number",
+      "db_fields": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "blog_title": {
+      "name": "blog_title",
+      "field": "blog_title",
+      "type": "string",
+      "db_fields": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "blog_detail": {
+      "name": "blog_detail",
+      "field": "blog_detail",
+      "type": "text",
+      "db_fields": {
+        "type": "text",
+        "required": false
+      }
+    },
+    "created_at": {
+      "name": "createdAt",
+      "field": "created_at",
+      "type": "datetime",
+      "db_fields": {
+        "type": "datetime",
+        "required": true
+      }
+    },
+    "updated_at": {
+      "name": "updatedAt",
+      "field": "updated_at",
+      "type": "datetime",
+      "db_fields": {
+        "type": "datetime",
+        "required": false
+      }
+    },
+    "deleted": {
+      "name": "deleted",
+      "field": "deleted",
+      "type": "bool",
+      "db_fields": {
+        "type": "delete",
+        "required": true,
+        "default": "N"
+      }
+    }
+  }
+}
